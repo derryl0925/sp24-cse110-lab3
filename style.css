@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0275d8;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+/* Customizing specific elements */
+#agenda {
+    background-color: #e9ecef;
+    border-left: 5px solid #5cb85c;
+}
+
+#attendees {
+    background-color: #f7f7f7;
+    border-left: 5px solid #5bc0de;
+}
+
+#discussion-points {
+    background-color: #fefefe;
+    border-left: 5px solid #f0ad4e;
+}
+
+/* Styling for text, borders, and spacing */
+p {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+
+/* Using CSS Variables with fallback */
+:root {
+    --main-bg-color: #ddd;
+    --accent-color: #555;
+}
+
+body {
+    background-color: var(--main-bg-color, #eee);
+}
+
+/* Flexbox for layout adjustments */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    flex: 1 1 300px;
+    margin: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+/* Adding some interactive styles with pseudo-classes */
+a:hover, a:active {
+    color: #d9534f;
+}
+
+input[type="submit"]:hover {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+/* Include a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Print styles - Example of another media query */
+@media print {
+    body {
+        color: black;
+        background: white;
+    }
+
+    nav, footer {
+        display: none;
+    }
+}
