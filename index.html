@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Meeting Minutes for 04-15-2024</title>
     <meta name="description" content="Detailed record of the meeting held on April 15, 2024, including agenda items, attendees, and discussion points.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/PTG.ico" type="image/x-icon">
-  </head>
-  <body>
+</head>
+<body>
     <header>
         <h1>Meeting Minutes</h1>
-        <h2>Meeting Date: 04-15-2024</h2>
+        <h2>Meeting Date: <span>04-15-2024</span></h2>
     </header>
     
     <nav>
@@ -25,16 +25,16 @@
         <section id="agenda">
             <h3>Agenda</h3>
             <ol>
-                <li>Review of last meeting's unfinished business</li>
-                <li>Discussion on new business</li>
-                <li>Miscellaneous topics</li>
+                <li>Review of last meeting's <strong>unfinished business</strong></li>
+                <li>Discussion on <strong>new business</strong></li>
+                <li><i>Miscellaneous topics</i></li>
             </ol>
         </section>
 
         <section id="attendees">
             <h3>Attendees</h3>
             <ul>
-                <li>Derrick Lin</li>
+                <li><strong><i>Derrick Lin</i></strong></li>
                 <li>Team member 1</li>
                 <li>Team member 2</li>
             </ul>
@@ -42,19 +42,19 @@
 
         <section id="discussion-points">
             <h3>Discussion Points</h3>
-            <div>
-                <h4>Unfinished Business from Last Meeting</h4>
+            <details>
+                <summary><b>Unfinished Business from Last Meeting</b></summary>
                 <p>Discussion on topics that were not concluded in the last meeting.</p>
-            </div>
-            <div>
-                <h4>New Business</h4>
+            </details>
+            <details>
+                <summary><b>New Business</b></summary>
                 <p>Introduction of new topics and discussion points.</p>
-            </div>
+            </details>
             <hr>
-            <div>
-                <h4>Miscellaneous Comments</h4>
+            <details>
+                <summary><b>Miscellaneous Comments</b></summary>
                 <p>Any additional comments, questions, or concerns raised during the meeting.</p>
-            </div>
+            </details>
         </section>
         
         <figure class="media">
@@ -72,7 +72,7 @@
     </main>
 
     <footer>
-        <p>Meeting notes provided by Derrick Lin.</p>
+        <p>Meeting notes provided by <b>Derrick Lin</b>.</p>
     </footer>
 
     <footer>
@@ -102,16 +102,18 @@
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
 
                 <label for="browser">Preferred Browser:</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                </select><br><br>
+                <datalist id="browsers">
+                    <option value="chrome">
+                    <option value="firefox">
+                    <option value="safari">
+                    <option value="edge">
+                </datalist>
+                <input list="browsers" id="browser" name="browser"><br><br>
 
                 <button type="submit">Submit</button>
             </fieldset>
         </form>
     </footer>
-  </body>
+</body>
 </html>
+
