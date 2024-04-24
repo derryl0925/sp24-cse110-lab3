@@ -14,7 +14,7 @@ header, nav, main, footer {
     border-radius: 8px;
 }
 
-/* New Selectors Usage - Adopted December 2023 */
+/* New Selectors Usage */
 @supports selector(:has(> *)){
     nav ul:has(> li) {
         background-color: #ddd; /* Example of using the :has() selector */
