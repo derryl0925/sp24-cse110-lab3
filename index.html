@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Meeting Minutes for 04-15-2024</title>
     <meta name="description" content="Detailed record of the meeting held on April 15, 2024, including agenda items, attendees, and discussion points.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/PTG.ico" type="image/x-icon">
-</head>
-<body>
+  </head>
+  <body>
     <header>
         <h1>Meeting Minutes</h1>
-        <h2>Meeting Date: <span>04-15-2024</span></h2>
+        <h2>Meeting Date: 04-15-2024</h2>
     </header>
     
     <nav>
@@ -25,16 +25,16 @@
         <section id="agenda">
             <h3>Agenda</h3>
             <ol>
-                <li>Review of last meeting's <strong>unfinished business</strong></li>
-                <li>Discussion on <strong>new business</strong></li>
-                <li><i>Miscellaneous topics</i></li>
+                <li>Review of last meeting's unfinished business</li>
+                <li>Discussion on new business</li>
+                <li>Miscellaneous topics</li>
             </ol>
         </section>
 
         <section id="attendees">
             <h3>Attendees</h3>
             <ul>
-                <li><strong><i>Derrick Lin</i></strong></li>
+                <li>Derrick Lin</li>
                 <li>Team member 1</li>
                 <li>Team member 2</li>
             </ul>
@@ -42,37 +42,39 @@
 
         <section id="discussion-points">
             <h3>Discussion Points</h3>
-            <details>
-                <summary><b>Unfinished Business from Last Meeting</b></summary>
+            <div>
+                <h4>Unfinished Business from Last Meeting</h4>
                 <p>Discussion on topics that were not concluded in the last meeting.</p>
-            </details>
-            <details>
-                <summary><b>New Business</b></summary>
+            </div>
+            <div>
+                <h4>New Business</h4>
                 <p>Introduction of new topics and discussion points.</p>
-            </details>
+            </div>
             <hr>
-            <details>
-                <summary><b>Miscellaneous Comments</b></summary>
+            <div>
+                <h4>Miscellaneous Comments</h4>
                 <p>Any additional comments, questions, or concerns raised during the meeting.</p>
-            </details>
+            </div>
         </section>
         
-        <figure class="media">
-        <img src="assets/ChromeIcon.png" alt="Diagram from Meeting">
-        <figcaption>Whiteboard Diagrams</figcaption>
-    </figure>
-    <audio class="media" controls>
-        <source src="assets/Introduction.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <video class="media" controls>
-        <source src="assets/Introduction.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+        <figure>
+            <img src="assets/ChromeIcon.png" alt="Diagram from Meeting">
+            <figcaption>Whiteboard Diagrams</figcaption>
+        </figure>
+
+        <audio controls>
+            <source src="assets/Introduction.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video controls>
+            <source src="assets/Introduction.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </main>
 
     <footer>
-        <p>Meeting notes provided by <b>Derrick Lin</b>.</p>
+        <p>Meeting notes provided by Derrick Lin.</p>
     </footer>
 
     <footer>
@@ -102,18 +104,16 @@
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
 
                 <label for="browser">Preferred Browser:</label>
-                <datalist id="browsers">
-                    <option value="chrome">
-                    <option value="firefox">
-                    <option value="safari">
-                    <option value="edge">
-                </datalist>
-                <input list="browsers" id="browser" name="browser"><br><br>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                </select><br><br>
 
                 <button type="submit">Submit</button>
             </fieldset>
         </form>
     </footer>
-</body>
+  </body>
 </html>
-
